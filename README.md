@@ -29,18 +29,18 @@ Any doubts with this step go to : https://docs.servicenow.com/bundle/quebec-it-a
 # How to install
 Previously you must have Python 3 installed.
 1) you must clone this repository in your local machine: git clone ...
-2) create a virtual environment with venv (https://docs.python.org/3/library/venv.html) : python3 -m venv /path/to/new/virtual/environment 
-3) activate the virtual environment : venv\Scripts\activate
+2) create a virtual environment with venv (https://docs.python.org/3/library/venv.html) : python -m venv ./venv 
+3) activate the virtual environment : ./venv/Scripts/activate
 4) install the packages : pip install -r requirements.txt
 5) set the FLASK_APP variable : set FLASK_APP=trello_api (windows) - export FLASK_APP=trello_api (linux/ubuntu)
-6) launch the flask local server : flask run
+6) go to spacex_trello_api directory, and launch the flask local server : flask run
 7) verify that the service is online, go to your browser and put: http://localhost:5000/about , you receive the message: This is a SpaceX Trello API :)
 8) now you need to create a .env file with the content of the example file: trello_env_ex.txt, and put in it the id values of your trello account and board. 
-You could find out using some urls of the app that were created for this purpose:
-http://localhost:5000/get/boards, http://localhost:5000/get/lists (find the id for your ToDo list), http://localhost:5000/get/labels (find the labels ids), and also put your Trello's ApiKey and Token.
+First you put your Trello's ApiKey and Token. Then you could find out using some urls of the app that were created for this purpose:
+http://localhost:5000/get/boards, http://localhost:5000/get/lists (find the id for your ToDo list), http://localhost:5000/get/labels (find the labels ids), and also put 
 
 # How to use
 Now you could add Cards to your board !!, using your browser or curl.
 1) To add an Issue : http://localhost:5000/add_issue/testing/engine 
-2) To add a Bug : http://localhost:5000/add_bug/cockpit depressure problem
-3) To add a Task : http://localhost:5000/add_task/Clean the rocket
+2) To add a Bug : http://localhost:5000/add_bug/cockpit%20depressure%20problem
+3) To add a Task : http://localhost:5000/add_task/Clean%20the%20rocket
