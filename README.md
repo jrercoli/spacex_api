@@ -37,7 +37,7 @@ Previously you must have Python 3 installed.
 7) verify that the service is online, go to your browser and put: http://localhost:5000/about , you receive the message: This is a SpaceX Trello API :)
 8) now you need to create a .env file with the content of the example file: trello_env_ex.txt, and put in it the id values of your trello account and board. 
 First you put your Trello's ApiKey and Token. Then you could find out using some urls of the app that were created for this purpose:
-http://localhost:5000/get/boards, http://localhost:5000/get/lists (find the id for your ToDo list), http://localhost:5000/get/labels (find the labels ids), and also put 
+http://localhost:5000/get/boards, http://localhost:5000/get/lists (find the id for your ToDo list), http://localhost:5000/get/labels (find the labels ids).
 
 # How to use
 Now you could add Cards to your board !!, using your browser or curl.
